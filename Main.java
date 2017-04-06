@@ -29,7 +29,9 @@ public class Main {
         }
 
         for(int i=0; i<tablica.length; i++){
-            System.out.println(tablica[i].toString());
+            System.out.println(tablica[i].toString() + " Masa: " + tablica[i].getMass()+" Wysokosc: " +
+                    tablica[i].getWysokosc()+" Promien: "+tablica[i].getPromien()+" Moment: "+ tablica[i].getMoment()
+                    +" nowy moment(d=8.5): "+ tablica[i].getSteinerMoment((float)8.5));
         }
     }
 }
